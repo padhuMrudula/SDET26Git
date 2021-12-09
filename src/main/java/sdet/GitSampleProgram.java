@@ -1,7 +1,10 @@
 package sdet;
 
+import org.testng.annotations.Test;
+
 public class GitSampleProgram {
-	public static void main(String[] args) {
+	@Test
+	public void gitSampleProgram() {
 		
 System.out.println("hi");
 	}
