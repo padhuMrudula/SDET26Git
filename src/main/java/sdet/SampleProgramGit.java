@@ -6,7 +6,7 @@ public class SampleProgramGit {
 	@Test
 	public void sampleProgramGit() {
 		System.out.println("user1 is commited ");
-		
+		System.out.println("user2 done");
 	}
 
 }
