@@ -11,6 +11,92 @@
     <version>7.4.0</version>
     <scope>test</scope>
 </dependency>
-  
-  </dependencies>
+</dependencies>
+<profiles>
+<profile>
+<id>sampleTest1</id>
+
+<build>
+	<pluginManagement>
+		
+<plugins>
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>sampleTest1.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</pluginManagement>
+</build>
+</profile>
+<profile>
+<id>spt</id>
+
+<build>
+	<pluginManagement>
+		
+<plugins>
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>sampleProgramTest.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</pluginManagement>
+</build>
+</profile>
+<profile>
+<id>smoke</id>
+
+<build>
+	<pluginManagement>
+		
+<plugins>
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>smokeTest.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</pluginManagement>
+</build>
+</profile>
+<profile>
+<id>reg</id>
+
+<build>
+	<pluginManagement>
+		
+<plugins>
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>regressionTest.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</pluginManagement>
+</build>
+</profile>
+
+</profiles>
 </project>
