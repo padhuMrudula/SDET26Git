@@ -6,6 +6,7 @@ public class SmokeTest {
 	@Test
 	public void smokeTest() {
 		System.out.println("smoke testcase is running");
+		System.out.println(" ");
 	}
 
 }
